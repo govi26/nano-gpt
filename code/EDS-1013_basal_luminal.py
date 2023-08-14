@@ -82,4 +82,3 @@ result_df = pd.DataFrame({
 })
 
 print(result_df)
-
