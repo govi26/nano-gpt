@@ -1,4 +1,5 @@
-FROM civisanalytics/datascience-python:latest
+# FROM civisanalytics/datascience-python:latest
+FROM python:3.9-slim
 
 ENV CODE_DIR=/home/code
 RUN mkdir -p $CODE_DIR
