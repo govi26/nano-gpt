@@ -3,9 +3,9 @@ import openai
 import requests
 
 
-API_KEY = "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"
+API_KEY = "<API_KEY>"
 API_URL = "https://api.openai.com/v1/chat/completions"
-openai.organization = "org-VZvITs7KcD7dec3VyDQpjScD"
+openai.organization = "<ORG_ID>"
 openai.api_key = API_KEY
 
 # print(openai.Model.list())
