@@ -1,0 +1,20 @@
+Here's an example code in Python to count the number of unique words in a file:
+
+```python
+def count_unique_words(file_path):
+    unique_words = set()
+
+    with open(file_path, 'r') as file:
+        for line in file:
+            words = line.strip().split()
+            unique_words.update(words)
+
+    return len(unique_words)
+
+# Example usage
+file_path = 'example.txt'
+unique_word_count = count_unique_words(file_path)
+print(f"Number of unique words in {file_path}: {unique_word_count}")
+```
+
+In this code, the `count_unique_words` function takes a file path as input and returns the count of unique words in the file. It uses a set data structure to keep track of unique words. It opens the file, reads each line, and splits it into words using the `split` method. The `update` method of the set is used to add the words to the set. Finally, the length of the set is returned as the count of unique words.

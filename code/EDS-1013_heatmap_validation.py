@@ -115,7 +115,7 @@ mad_values_new = expression_data_new.mad(axis=1)
 sorted_genes_new = mad_values_new.sort_values(ascending=False)
 
 # Select the top 50 genes based on MAD values
-top_50_genes_new = sorted_genes_new.head(5).index
+top_50_genes_new = sorted_genes_new.head(10).index
 
 # Filter the expression data for these top 50 genes
 top_50_genes_data_new = expression_data_new.loc[top_50_genes_new]
